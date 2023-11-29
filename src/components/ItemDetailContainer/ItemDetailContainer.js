@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from 'react'
-import { getProductsById } from '../../asynProducts'
+import { getProductById } from '../../asynProducts.js'
 import ItemList from '../ItemList/ItemList'
 import ItemDetail from '../ItemDetail/ItemDetail'
 import { useParams } from "react-router-dom"
@@ -11,7 +11,7 @@ const ItemDetailContainer = () => {
     const { itemId } = useParams()
 
     useEffect(() => {
-        getProductsById(itemId)
+        getProductById(itemId)
             .then(response => {
                 setProduct(response)
             })

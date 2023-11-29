@@ -2,6 +2,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import NavBar from "./components/NavBar.js";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer.js";
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer.js';
 import "bulma/css/bulma.css";
 
 

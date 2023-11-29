@@ -7,9 +7,9 @@ import "./ItemListContainer.css"
 import { useParams } from "react-router-dom"
 
 const ItemListContainer = ({ greeting }) => {
-    const [prodicts, setProducts] = useState([])
+    const [products, setProducts] = useState([])
 
-    const {categotyId} = useParams()
+    const {categoryId} = useParams()
 
     useEffect(() => {
         const asyncFunc = categoryId ? getProductsByCategory : getProducts
